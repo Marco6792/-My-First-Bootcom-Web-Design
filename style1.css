@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.child-container {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+}
+
+.img-container {
+    padding: 0;
+    position: relative;
+    background: rgb(66, 3, 3);
+    border-radius: 11px;
+    overflow: hidden;
+
+}
+
+
+.img-container:hover .light-blue {
+    opacity: 1;
+}
+
+
+.img-container img {
+    height: 100%;
+    /* top: 29px; */
+    width: 100%;
+    object-fit: cover;
+    /* transform: scale(1); */
+
+    position: relative;
+}
+
+.img-container img:hover {
+    transform: scale(1.00);
+    background-color: cyan;
+}
+
+h2 {
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    padding: 18px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(.99);
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    transform: scale(1.00);
+}
+
+#para1 {
+    color: hsl(215, 51%, 70%);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 12px;
+}
+
+h3 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 300;
+    text-align: start;
+    padding: 15px 13px;
+    font-size: 17px;
+}
+
+.section2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#para {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.border {
+    border-bottom: 2.6px solid hsl(215, 33%, 23%);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section3 {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.section3 .img-border {
+    height: 50px;
+    width: 50px;
+    background-image: url("image-avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    border: 2px solid hsl(0, 0%, 100%);
+    left: 23px;
+    top: 9px;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 85px;
+    bottom: 30px;
+}
+
+#pa {
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#pa:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#para3 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 23px;
+}
+
+.light-blue img {
+    width: initial;
+    height: initial;
+}
+
+.light-blue {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.473);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
